@@ -1,11 +1,17 @@
 1. git bash 和 cmd 一样，建议使用 git bash
+
 2. git clone 到本地指定文件夹
+
    - git clone git@github.com:Vampire1124/NewStart.git F:/UnityNewProject/GitHubProject
+
 3. git clone  git@github.com:Vampire1124/NewStart.git  查看 clone 到的文件夹
+
    - git bash 中输入 ls
    - 输入 cd NewStart/
    - 输入 pwd 即可查看项目所在文件夹
+
 4. 项目 clone 到指定文件夹，如何通过 Git Bash 进行上传？
+
    - 打开 Git Bash，cd 到你仓库文件夹，我的就是  F:/UnityNewProject/GitHubProject
    - 到达这个目录的时候后面自动有个小括号 （master） 提示这是个主分支
    - (一般不会在 master 上直接操作，而是建立分支  git branch :查看所有分支   git branch a ：创建新分支  git checkout a :切换到 a 分支上【git chekout -b a: 直接先创建再切换】，在 a 分支上修改完代码， git chekout master 切换到 master 上，git merge a ，将  a 分支合并到 master 上，合并完成 git branch -d a 删除分支 a,git tag v1.0 添加标签，也是 git checkout v1.0 切换到对应版本代码)
@@ -14,5 +20,13 @@
    - 再执行 git commit -m 'first commit' 进行提交  后面是每次提交的信息
    - git log 查看产生的所有 commmit 记录
    - git push origin master  推送到远程仓库
+
 5. 提交的时候 Warning 警示：Permanently added the RSA host key for IP address '192.30.252.128' to the list of known host。为这个地址持久添加到 hosts 文件中。可以不用管
+
+6. 修改文件或新建文件如何上传操作？
+
+   - git status 查看，有红色 modified: 提示
+   - 每次文件不论是原来有的还是原来没有的，修改或新添加文件，都先 git add 将修改过的或者添加的文件加进来
+   - 再 git commit -m 进行上传
+
 
