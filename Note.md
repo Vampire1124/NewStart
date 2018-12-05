@@ -31,8 +31,26 @@
    - 每次文件不论是原来有的还是原来没有的，修改或新添加文件，都先 git add 将修改过的或者添加的文件加进来
    - 再 git commit -m 进行上传
 
+   7. git log 提示让你 press return  按下 q 即可退出
+
    ### 第二种：本地有项目NewStart2，需要在 GitHub 上建一个 NewStart2项目，然后把本地的项目中所有代码 commit 记录提交到 GitHub 上对应的项目中
 
-   1. GitHub 上新建一个 NewStart2 项目
+   1. 本地 init 初始化一个库
+      - 在本地选个地方建个文件夹  F：/GitHub
+      - 打开 Git Bash，或切换到这个文件夹，cd 切换到 GitHub 文件夹
+      - git status 查看这个文件夹还不是一个仓库
+      - git init   执行完这个文件夹就是一个仓库
+      - 在 GitHub 文件夹中创建文件 Test2.md
+      - git add Test2.md
+      - git commit -m 'first commit' 进行提交
+      - 
+   2. GitHub 上新建一个 NewStart2 项目
+   3. git remote add origin git@github.com:Vampire1124/NewStart2.git
+      - 给本地的项目添加一个远程仓库，origin 是给这个远程仓库起的名字，名字可以随便起。大家公认只有一个远程仓库名字就是 origin。
+   4. git remote -v 查看当前项目有哪些远程仓库
+   5. git push origin master 向对应的远程仓库提交代码，而这个代码是在 master 分支上。也可以提交到指定分支。
+      - 此处报错。操作是，在 github 上创建项目，然后本地 git init ,没有 git pull -f -all ,就 add ,commit ,push ,导致 github 上的 readme 文件和本地版本冲突。
+      - 解决办法：git push  -u origin master -f
+      - 一般我们在 push 之前，都先 pull ,这样不容易导致冲突
 
 
