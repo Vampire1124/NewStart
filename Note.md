@@ -14,4 +14,5 @@
    - 再执行 git commit -m 'first commit' 进行提交  后面是每次提交的信息
    - git log 查看产生的所有 commmit 记录
    - git push origin master  推送到远程仓库
+5. 提交的时候 Warning 警示：Permanently added the RSA host key for IP address '192.30.252.128' to the list of known host。为这个地址持久添加到 hosts 文件中。可以不用管
 
