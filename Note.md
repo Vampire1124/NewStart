@@ -1,3 +1,5 @@
+### 第一种：从 GitHub 上 clone 下来项目进行修改，再提交 
+
 1. git bash 和 cmd 一样，建议使用 git bash
 
 2. git clone 到本地指定文件夹
@@ -28,5 +30,9 @@
    - git status 查看，有红色 modified: 提示
    - 每次文件不论是原来有的还是原来没有的，修改或新添加文件，都先 git add 将修改过的或者添加的文件加进来
    - 再 git commit -m 进行上传
+
+   ### 第二种：本地有项目NewStart2，需要在 GitHub 上建一个 NewStart2项目，然后把本地的项目中所有代码 commit 记录提交到 GitHub 上对应的项目中
+
+   1. GitHub 上新建一个 NewStart2 项目
 
 
