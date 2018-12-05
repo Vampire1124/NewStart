@@ -1,4 +1,4 @@
-### 第一种：从 GitHub 上 clone 下来项目进行修改，再提交 
+#### **第一种：从 GitHub 上 clone 下来项目进行修改，再提交** 
 
 1. git bash 和 cmd 一样，建议使用 git bash
 
@@ -31,9 +31,11 @@
    - 每次文件不论是原来有的还是原来没有的，修改或新添加文件，都先 git add 将修改过的或者添加的文件加进来
    - 再 git commit -m 进行上传
 
-   7. git log 提示让你 press return  按下 q 即可退出
+7. git log 提示让你 press return  按下 q 即可退出
 
-   ### 第二种：本地有项目NewStart2，需要在 GitHub 上建一个 NewStart2项目，然后把本地的项目中所有代码 commit 记录提交到 GitHub 上对应的项目中
+
+
+   #### 第二种：本地有项目NewStart2，需要在 GitHub 上建一个 NewStart2项目，然后把本地的项目中所有代码 commit 记录提交到 GitHub 上对应的项目中
 
    1. 本地 init 初始化一个库
       - 在本地选个地方建个文件夹  F：/GitHub
@@ -53,4 +55,9 @@
       - 解决办法：git push  -u origin master -f
       - 一般我们在 push 之前，都先 pull ,这样不容易导致冲突
 
+   #### 修改全局邮箱
 
+   1. git config --global --replace-all user.email "your user email" 注意空格，修改全局名字类似
+   2. 修改 .gitconfig 文件
+      - 该文件是隐藏文件，位于`C:\Users\{user}\.gitconfig`，直接修改里边的name或者email，如果有重复的name或email，可以将其删掉，只剩下一个就好。
+      - 修改完，通过git bash输入git config –list可以查看是否修改成功了。
