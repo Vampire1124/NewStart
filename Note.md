@@ -57,7 +57,14 @@
 
    #### 修改全局邮箱
 
-   1. git config --global --replace-all user.email "your user email" 注意空格，修改全局名字类似
-   2. 修改 .gitconfig 文件
+      1. git config --global --replace-all user.email "your user email" 注意空格，修改全局名字类似
+      2. 修改 .gitconfig 文件
       - 该文件是隐藏文件，位于`C:\Users\{user}\.gitconfig`，直接修改里边的name或者email，如果有重复的name或email，可以将其删掉，只剩下一个就好。
       - 修改完，通过git bash输入git config –list可以查看是否修改成功了。
+
+
+
+1. 删除 Fork 的没用的项目
+   - 进入自己 copy 别人的 repository 页面，不是原作者的界面
+   - 进入 settings 的 options
+   - 页面拉到最底，在 Dangere Zone 直接 delete this repository 即可。需要输入项目的名称才可以删除
