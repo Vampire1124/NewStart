@@ -68,3 +68,36 @@
    - 进入自己 copy 别人的 repository 页面，不是原作者的界面
    - 进入 settings 的 options
    - 页面拉到最底，在 Dangere Zone 直接 delete this repository 即可。需要输入项目的名称才可以删除
+
+2. 使用第二种方法上传项目。在 Github 上新建了项目 Radar，鉴于之前 README 和本地文件冲突，所以，我没有创建 README 文件，提交的时候报错。error: src refspec master does not match any 
+
+   可能原因：
+
+   - 本地文件和 Github 上有文件冲突
+   - 本地需要提交的文件中存在空文件
+   - 本地的 origin 和 remote origin/master 没有建立关联
+
+   解决办法：
+
+   前两种原因：
+
+   touch README
+
+   git add README
+
+   git commit -m "change"
+
+   git push origin master
+
+   第三种原因：
+
+   git remote remove origin
+
+   git remote add origin git@github.com:Vampire1124/Radar.git
+
+   git push origin master
+
+
+
+   [参考链接]: https://yuanyuanshen.github.io/2016/10/25/github-%E4%B8%8A%E4%BC%A0error-src-refspec-master-does-not-match-any-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/
+
